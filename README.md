@@ -2,7 +2,11 @@
 
 This codebase provides a minimally configured JS testing environment. It uses ESModules for imports and exports.
 
+# Setup
+
 Make sure you're running Node `v16.18.0`. If you use nvm, run `nvm use` to use the version specified in `.nvmrc`.
+
+Run `npm ci` to install dev dependencies.
 
 # Scripts
 
