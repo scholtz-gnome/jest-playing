@@ -18,6 +18,10 @@ Runs tests once.
 
 Runs tests in watch mode and reruns them on file save.
 
+## `npm run test:cov`
+
+Runs tests and creates a coverage report.
+
 ## `npm run start`
 
 Runs `node src/index.js`
