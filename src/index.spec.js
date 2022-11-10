@@ -1,13 +1,14 @@
-import { MyModule } from './index';
+import { UsersRepository } from './index';
 
-describe('Module', () => {
-  it('is defined', () => {
-    expect(new MyModule().property).toEqual('property');
-  });
+describe('UsersRepository', () => {
+  describe('#create', () => {
+    it('returns an object', () => {
+      const usersRepository = new UsersRepository();
 
-  describe('#greet', () => {
-    it('returns greeting', () => {
-      expect(new MyModule().greet()).toEqual('Hello, there!');
+      const createUserDto = { name: 'Bob', age: 10, isEmailVerified: true };
+      const user = usersRepository.create(createUserDto);
+
+      expect(user).toMatchObject(createUserDto);
     });
   });
 });

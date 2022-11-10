@@ -1,9 +1,8 @@
-export class MyModule {
-  constructor() {
-    this.property = 'property';
-  }
+export class UsersRepository {
+  create(createUserDto) {
+    const createdAt = new Date();
+    const updatedAt = new Date();
 
-  greet() {
-    return 'Hello, there!';
+    return { ...createUserDto, createdAt, updatedAt };
   }
 }
